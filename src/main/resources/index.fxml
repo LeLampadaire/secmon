@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Informations">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#buttonInformation" text="Crédits" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <FlowPane rowValignment="TOP">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Exemple des commandes :                                                                                                 " textAlignment="CENTER" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="    - Ajout d'un serveur : &quot;ADDSRV&quot; sp augmented_url crlf                                                                        " textAlignment="CENTER" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="    - Lister les serveurs : &quot;LISTSRV&quot; crlf                                                                        " textAlignment="CENTER" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="    - Recevoir le status d'un serveur : &quot;STATESRV&quot; sp id crlf                                                                        " textAlignment="CENTER" />
+               </children>
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+            </FlowPane>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Encodez une commande :" textAlignment="CENTER" />
+               </children>
+            </FlowPane>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER">
+               <children>
+                  <TextField fx:id="inputCommand" minWidth="500.0" onAction="#inputTextCommand" />
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </FlowPane>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Résultat de votre commande :" textAlignment="CENTER" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+            </FlowPane>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER">
+               <children>
+                  <Label fx:id="zoneResultDisplay" alignment="CENTER" contentDisplay="CENTER" textAlignment="CENTER" />
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
