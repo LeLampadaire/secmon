@@ -1,2 +1,7 @@
-# secmon
-Projet pour le cours de réseau de deuxième année à l'HELMO Campus Guillemins avec Nathan Lemoine et Florent Lequien.
+# SecMon
+Projet pour le cours de réseau de deuxième année à l'HELMO Campus Guillemins.
+
+Les participants : 
+- Nathan Lemoine
+- Florent Lequien
+- Rausin Julien
